@@ -1,0 +1,15 @@
+# Palindrome
+
+def pal(num):
+  reverse=0
+  while(num!=0):
+    reminder=num%10
+    reverse=reverse*10+reminder
+    num=num//10
+  return reverse
+
+num=1221
+if pal(num) == num:
+  print("Palindrome")
+else:
+  print("not a Palindrome")
