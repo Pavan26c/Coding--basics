@@ -1,0 +1,13 @@
+#Reverse a Number: Take an integer like 1234 and output 4321 using a 
+
+
+def revnumber(num):
+  rev=0
+  while(num!=0):
+    rem=num%10
+    rev=rev*10+rem
+    num=num//10
+  print(rev)
+
+num=1234
+revnumber(num)
